@@ -1,0 +1,98 @@
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.logo-image {
+  width: 150px;
+}
+
+.btn.secondary {
+  background-color: #237b98;
+  border-color: #1c627a;
+  color: #fff;
+}
+
+#home-carousel {
+  position: relative;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000075;
+  z-index: 1;
+}
+
+.search-from {
+  position: absolute;
+  top: 100px;
+  z-index: 2;
+  color: white;
+}
+
+.select-no-border {
+  -webkit-appearance: none;
+  border: none;
+  -webkit-border-radius: 0px;
+}
+
+.no-rounded {
+  border-radius: 0
+}
+
+.no-border {
+  border: none;
+}
+
+.red-background {
+  background-color: #da3743;
+  border-color: #b8222d;
+  color: #fff;
+}
+
+i.icon-left {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  color: #696868;
+}
+
+.search-text {
+  i {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: #696868;
+  }
+}
+
+.text-red {
+  color: #da3743
+}
+
+.cuisines-card {
+  span {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+  }
+}
+
+#footer {
+  .container-fluid {
+    background-color: #303030;
+    color: #acacac;
+
+    a {
+      color: white
+    }
+  }
+}

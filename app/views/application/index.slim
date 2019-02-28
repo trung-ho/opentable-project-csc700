@@ -1,0 +1,75 @@
+
+#home-carousel.carousel.slide.mb-3 data-ride="carousel"
+  .mask
+  .container
+    .row
+      .col
+        .search-form-wrap.position-relative
+          .search-from.w-100
+            h1.mb-4.text-center Find your table for any occasion
+            form.row
+              .col-md-6.mb-3
+                .row.m-0
+                  .form-wrap.col-4
+                    .row
+                      input.form-control.no-border.border-right.no-rounded.rounded-left.pl-4 type="text" placeholder="Feb 24th, 2019"
+                      i.fas.fa-calendar-week.icon-left
+                  .form-wrap.col-4
+                    .row
+                      select.custom-select.select-no-border.border-right.pl-4
+                        option value="20:00"  8:00 PM
+                        option value="20:30"  8:30 PM
+                        option value="21:00"  9:00 PM
+                        option value="21:30"  9:30 PM
+                        option value="22:00"  10:00 PM
+                        option value="22:30"  10:30 PM
+                        option value="23:00"  11:00 PM
+                        option value="23:30"  11:30 PM
+                      i.far.fa-clock.icon-left
+                  .form-wrap.col-4
+                    .row
+                      select.custom-select.select-no-border.rounded-right.pl-4
+                        option value="2" 2 people
+                        option value="4" 4 people
+                        option value="6" 6 people
+                        option value="n" Large party
+                      i.far.fa-user.icon-left
+              .col-md-4.mb-3.search-text
+                input.form-control.pl-4 type="text" placeholder="Where"
+                i.fas.fa-search
+              .col-md-2.mb-3
+                button.btn.red-background.w-100 Search
+  .carousel-inner
+    .carousel-item.active data-interval="1000" 
+      img.d-block.w-100 alt="..." src="/assets/1.jpg" /
+    .carousel-item data-interval="1000" 
+      img.d-block.w-100 alt="..." src="/assets/2.jpg"
+#page-content
+  .container
+    .row.mb-4
+      .col
+        p 
+          | It looks like you're in San Diego. Not correct?
+          a.ml-2.get-location.text-red href="#"
+            i.fas.fa-location-arrow.mr-1
+            | Get current location
+        .dropdown-divider
+    .row.mb-3
+      .col
+        .d-flex.justify-content-between
+          h3 Popular restaurants in San Diego
+          a.text-red  href="#" View All
+        .dropdown-divider
+    .row.mb-4
+      - 4.times do |n|
+        .col-lg-3.col-md-6
+          = render partial: '/restaurants/card'
+    .row.mb-4
+      .col
+        h3 Top Cuisines Near You
+        .dropdown-divider
+    .row.mb-3
+      - 4.times do |n|
+        .col-lg-3.col-md-6
+          = render partial: '/restaurants/card_cuisines'
+
