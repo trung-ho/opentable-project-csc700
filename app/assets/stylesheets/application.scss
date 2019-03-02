@@ -53,21 +53,19 @@
   color: #fff;
 }
 
+.form-wrap {
+  input, select {
+    padding-left: 35px;
+  }
+}
+
 i.icon-left {
   position: absolute;
-  left: 5px;
+  left: 10px;
   top: 10px;
   color: #696868;
 }
 
-.search-text {
-  i {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    color: #696868;
-  }
-}
 
 .text-red {
   color: #da3743

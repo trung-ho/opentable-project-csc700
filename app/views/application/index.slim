@@ -12,11 +12,11 @@
                 .row.m-0
                   .form-wrap.col-4
                     .row
-                      input.form-control.no-border.border-right.no-rounded.rounded-left.pl-4 type="text" placeholder="Feb 24th, 2019"
+                      input.form-control.no-border.border-right.no-rounded.rounded-left type="text" placeholder="Feb 24th, 2019"
                       i.fas.fa-calendar-week.icon-left
                   .form-wrap.col-4
                     .row
-                      select.custom-select.select-no-border.border-right.pl-4
+                      select.custom-select.select-no-border.border-right
                         option value="20:00"  8:00 PM
                         option value="20:30"  8:30 PM
                         option value="21:00"  9:00 PM
@@ -28,21 +28,22 @@
                       i.far.fa-clock.icon-left
                   .form-wrap.col-4
                     .row
-                      select.custom-select.select-no-border.rounded-right.pl-4
+                      select.custom-select.select-no-border.rounded-right
                         option value="2" 2 people
                         option value="4" 4 people
                         option value="6" 6 people
                         option value="n" Large party
                       i.far.fa-user.icon-left
               .col-md-4.mb-3.search-text
-                input.form-control.pl-4 type="text" placeholder="Where"
-                i.fas.fa-search
+                .form-wrap.row
+                  input.form-control type="text" placeholder="Where"
+                  i.fas.fa-search.icon-left
               .col-md-2.mb-3
                 button.btn.red-background.w-100 Search
   .carousel-inner
-    .carousel-item.active data-interval="1000" 
-      img.d-block.w-100 alt="..." src="#{image_path('1.jpg')}" /
-    .carousel-item data-interval="1000" 
+    .carousel-item.active data-interval="5000" 
+      img.d-block.w-100 alt="..." src="#{image_path('1.jpg')}"
+    .carousel-item data-interval="5000" 
       img.d-block.w-100 alt="..." src="#{image_path('2.jpg')}"
 #page-content
   .container
