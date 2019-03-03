@@ -5,4 +5,7 @@ class ApplicationController < ActionController::Base
 
   def show
   end
+
+  def all
+  end
 end

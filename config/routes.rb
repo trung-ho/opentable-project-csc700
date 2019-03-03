@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root 'application#index'
 
   get 'restaurant/show/' => 'application#show'
+  get 'restaurant/all/' => 'application#all'
 end

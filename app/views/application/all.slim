@@ -1,0 +1,85 @@
+.container-fluid#restaurant-index
+  .row.form-wrap-row.mb-4
+    .container
+      form.row.py-3
+        .col-md-6.pr-0
+          .row.m-0
+            .form-wrap.col-4
+              .row
+                input.form-control.no-border.border-right.no-rounded.rounded-left type="text" placeholder="Feb 24th, 2019"
+                i.fas.fa-calendar-week.icon-left
+            .form-wrap.col-4
+              .row
+                select.custom-select.select-no-border.border-right
+                  option value="20:00"  8:00 PM
+                  option value="20:30"  8:30 PM
+                  option value="21:00"  9:00 PM
+                  option value="21:30"  9:30 PM
+                  option value="22:00"  10:00 PM
+                  option value="22:30"  10:30 PM
+                  option value="23:00"  11:00 PM
+                  option value="23:30"  11:30 PM
+                i.far.fa-clock.icon-left
+            .form-wrap.col-4
+              .row
+                select.custom-select.select-no-border
+                  option value="2" 2 people
+                  option value="4" 4 people
+                  option value="6" 6 people
+                  option value="n" Large party
+                i.far.fa-user.icon-left
+        .col-md-4.search-text.pr-0
+          .form-wrap.row
+            input.form-control.no-rounded.border-top-0.border-bottom-0 type="text" placeholder="Where"
+            i.fas.fa-search.icon-left
+        .col-md-2
+          button.btn.red-background.w-100.no-rounded Search
+  .container.mb-4
+    .row
+      .col-sm-2
+        h5.mb-3
+          i.fas.fa-map-marker-alt.mr-2
+          | Region
+        .form-check
+          input#defaultCheck1.form-check-input type="checkbox" value="" /
+          label.form-check-label for="defaultCheck1" 
+            h5.font-weight-light San Diego
+        .form-check
+          input#defaultCheck1.form-check-input type="checkbox" value="" /
+          label.form-check-label for="defaultCheck1" 
+            h5.font-weight-light East County
+        .dropdown-divider.my-4
+        h5.mb-3
+          i.fas.fa-utensils.mr-2
+          | Cuisine
+        .form-check
+          input#defaultCheck1.form-check-input type="checkbox" value="" /
+          label.form-check-label for="defaultCheck1" 
+            h6.font-weight-light American
+        .form-check
+          input#defaultCheck1.form-check-input type="checkbox" value="" /
+          label.form-check-label for="defaultCheck1" 
+            h6.font-weight-light Italian
+        .form-check
+          input#defaultCheck1.form-check-input type="checkbox" value="" /
+          label.form-check-label for="defaultCheck1" 
+            h6.font-weight-light Steakhouse
+        .form-check
+          input#defaultCheck1.form-check-input type="checkbox" value="" /
+          label.form-check-label for="defaultCheck1" 
+            h6.font-weight-light Seafood
+        .form-check
+          input#defaultCheck1.form-check-input type="checkbox" value="" /
+          label.form-check-label for="defaultCheck1" 
+            h6.font-weight-light Mexican
+        .form-check
+          input#defaultCheck1.form-check-input type="checkbox" value="" /
+          label.form-check-label for="defaultCheck1" 
+            h6.font-weight-light French
+
+      .col-sm-10
+        h5 237 TABLES FOR 2 PEOPLE ON SATURDAY, MARCH 2, AT 11:00 PM
+        .dropdown-divider.mb-3
+
+        - 4.times do |n|
+          = render partial: '/restaurants/card_horizontal'
