@@ -43,7 +43,7 @@
               = render partial: '/comments/card'
             
       .col-md-4.right-col
-        .card.w-100.border-0.reservation-card.shadow
+        .card.w-100.border-0.reservation-card.shadow.mb-3
           .card-body
             h5.card-title Make a reservation
             .dropdown-divider.mb-3
@@ -74,4 +74,18 @@
             p
               i.fas.fa-chart-line.mr-2
               span Booked 77 times today
+        .card.w-100.p-1.mb-3
+          iframe#gmap_canvas.mb-2 frameborder="0" height="344" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?q=477%20Camino%20del%20Rio%20S%20San%20Diego%2C%20CA%2092108&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%"
+          p
+            i.fas.fa-map-marker-alt.mr-2
+            | 477 Camino del Rio S San Diego, CA 92108
+        p.font-weight-bold
+          i.far.fa-clock.mr-2
+          | Hours of operation
+        p.mb-1 LUNCH: 
+        p Monday - Sunday: 11:00 am - 3:00 pm
 
+        p.mb-1 DINNER: 
+        p.mb-1 Monday - Thursday: 3:00 pm - 10:00 pm
+        p.mb-1 Friday - Saturday: 3:00 pm - 11:00 pm
+        p.mb-1 Sunday: 3:00 pm - 10:00 pm
